@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/griddf.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="fotos/donfloresredes.jpg">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Teko&display=swap" rel="stylesheet">
@@ -12,20 +13,25 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/b29ce011be.js"></script>
     <link rel="icon" href="fotos/donflore.ico">
+    <link rel="stylesheet" href="css/griddf.css">
     <title>Don Flores</title>
 </head>
 <body>
     <div id="grilla">
             
         
-            <header class="border">
+            <header class="header">
                 <div class="logo">
                     <div class="imglogo">
                         <img src="fotos/donflore.ico" alt="logo">
                     </div>
                    <h1> Don Flores</h1>
                 </div>
-                    
+                <button class="header__button">
+                    <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </button>    
                     <nav id="nav1">
                         <ul class="navlista">Inicio
                             <li>Menu</li>
@@ -41,36 +47,74 @@
             </header>
             
             <main>
-                <article class="border">
-                    <div class="article_div">
+                <article >
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="fotos/calabaja.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Calabresa</h5>
+                              <p>Salsa, muzarella, longaniza, provenzal, morrones, aceitunas y oregano </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fotos/dffuga.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Fuggazeta</h5>
+                              <p>Cebollas salteadas, muzzarella, oregano y aceitunas</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fotos/dfjym.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Jamon y morrones</h5>
+                              <p>Salsa, muzarella, jamon, morrones, aceitunas y oregano.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    <!--<div class="article_div">
                      <img src="fotos/calabaja.jpg" alt="df">
-                     <!--
+                     
                      <div class="textcentro">Proximamente carrusell, disculpas</div>-->
                 </article>
                 <br>
                 <div id="grilla2" class="cajas">
-                    <div class="border caja1">
+                    <div class=" caja1">
                         <img src="fotos/dffuga.jpg" alt="fuga">
                         <span>
                             <p>1/2 metro de cualquier gusto a eleccion + 1 Bebida de 1.5L</p>
                             <b>2000$</b> 
                         </span>
                     </div>
-                    <div class="border caja2">
+                    <div class=" caja2">
                         <img src="fotos/dfjym.jpg" alt="jym">
                         <span>
                             <p>1/2 metro de Jamon y morrones + 6 empanadas</p>
                             <b>2000$</b>  
                         </span>
                     </div>
-                    <div class="border caja3">
+                    <div class=" caja3">
                         <img src="fotos/dfmm.jpg" alt="mm">
                         <span>
                         <p>1/2 metro de fuggazeta + 6 empanadas a eleccion</p>
                         <b>2000$</b>
                     </span>
                     </div>
-                    <div class="border caja4">
+                    <div class="caja4">
                         <img src="fotos/calabaja.jpg" alt="cala">
                         <span>
                         <p>1/2 metro Calabresa + 2 faina</p>
@@ -79,7 +123,7 @@
                     </div>
                 </div>
             </main>
-            <aside class="border comentarios">
+            <aside class=" comentarios">
                 <div  data-aos="zoom-in" class="com1"><img src="fotos/comentario1.png" alt="com1"></div>
                 <div data-aos="zoom-in" class="com2"><img src="fotos/comentario2.png" alt="com2"></div>
                 <div  data-aos="zoom-in" class="com3"><img src="fotos/comentario3.png" alt="com3"></div>
@@ -102,8 +146,7 @@
                         <h3>Don Flores</h3>
                         <h5>Pizza por metro</h5>
                     
-                </div><h3>hola</h3>
-                <h4>ramarama</h4>
+                </div>
                 <div class="footer__div__list" id="tercera">
                             <ul class="footer__div__list2"><i>Redes Sociales</i>
                                 <li><a href="https://www.facebook.com/DonFloresPizzaxmetro/" target="_blank"><i class="bi bi-facebook"></i>Facebook</a></li>
@@ -123,5 +166,7 @@
     <script>
         AOS.init();
       </script>
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

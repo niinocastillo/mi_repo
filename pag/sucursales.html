@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../css/griddf.css">
-            <link rel="stylesheet" href="fotos/donfloresredes.jpg">
-            <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
-            <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Teko&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-            <script src="https://use.fontawesome.com/b29ce011be.js"></script>
-            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-            <link rel="icon" href="../fotos/donflore.ico">
-            <title>Don Flores</title>
-        </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="fotos/donfloresredes.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/b29ce011be.js"></script>
+    <link rel="icon" href="fotos/donflore.ico">
+    <link rel="stylesheet" href="../css/griddf.css">
+    <title>Don Flores</title>
+</head>
         <body>
            <div #grilla>
-            <header class="border">
-            <div class="logo">
+            <header class="header">
+                <div class="logo">
                     <div class="imglogo">
                         <img src="../fotos/donflore.ico" alt="logo">
                     </div>
-                <h1> Don Flores</h1>
+                   <h1> Don Flores</h1>
                 </div>
-                    
+                <button class="header__button">
+                    <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </button>    
                     <nav id="nav1">
                         <ul class="navlista">
-                            <li><a href="../index.html">Inicio</a> </li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Promciones</a></li>
-                            <li><a href="#">Mi pedido</a></li>
-                            <li><a href="../pag/sucursales.html">Sucursales</a></li>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li>Menu</li>
+                            <li>Promociones</li>
+                            <li>Mi pedido</li>
+                            <li><a href="sucursales.html">Sucursales</a></li>
                         </ul>
                         <i id="menuBurger" class="bi bi-list"></i> 
-                        <img class="burger" src="fotos/menu3.png" alt="menu">
+                        <img class="burger" src="../fotos/menu3.png" alt="menu">
                     </nav>
-             </header>
+                    
+
+            </header>
+            
              
             <section>
                 <article>
@@ -84,10 +93,10 @@
                     </div>
                 </footer>
         
-       </div>
-       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
-    </body>
+       </div><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+           AOS.init();
+         </script>
+         <!-- JavaScript Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>
